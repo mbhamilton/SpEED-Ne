@@ -1,4 +1,4 @@
-The SpEED-Ne/SpEED-Ne simulation code/ folder contains the Matlab code for simulations and manipulation of simulated data filed. The simulation functions use the estimation code functions that are found in SpEED-Ne/SpEED-Ne interface code/.
+The SpEED-Ne/SpEED-Ne simulation code/ folder contains the Matlab code for simulations and manipulation of simulated data filed. The simulation functions use the estimation code functions that are found in SpEED-Ne/SpEED-Ne estimation code/ or SpEED-Ne/SpEED-Ne interface code/.
 
 simulate_r.m - Program designed as a simulator that calls functions to estimate r_squared_comp and r_squared_delta using simulated data. 
 This function utilizes the same estimation functions as the GUI version of SpEED-Ne along with generate_pop.m to simulate genetic data with a time-forward algorithm.
