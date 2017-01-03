@@ -1,0 +1,3 @@
+This folder contains finctions to read and write diploid genetic data to several commonly used formats. The functions read and write genepop format, and read and reformat arlequin (.arl) files.
+
+Look at the example input files since the functions do not necessarily cover every possible format variation. 
