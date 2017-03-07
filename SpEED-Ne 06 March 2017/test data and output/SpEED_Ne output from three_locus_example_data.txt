@@ -1,0 +1,614 @@
+>> SpEED_Ne
+----------------------------------------------------
+SpEED-Ne is free software under the terms of the GNU General Public License
+
+07-Mar-2017 17:07:37
+
+Input genotype data file: /Users/matthewhamilton/Dropbox/R project/GUI clean v2/test data and output/three_locus_example_data.csv
+
+Number of loci in data set = 3 
+
+Entire genotypes treated as missing if one allele is missing.
+
+Allele frequencies in genotype data:
+================================================
+Table of allele states and frequencies
+
+Locus	k	allele	frequency
+------------------------------------------------
+  1	  2
+		 93	0.6042
+		 97	0.3958
+  2	  5
+		149	0.1327
+		153	0.0102
+		155	0.5816
+		157	0.1735
+		159	0.1020
+  3	  5
+		112	0.0761
+		116	0.5326
+		120	0.2174
+		124	0.0435
+		128	0.1304
+================================================
+
+Minimum allele frequency used for allele frequency threshold (AFT) estimates = 0.0500
+
+********** Locus 1 - Locus 2 pair **********
+==========================================================================================
+Table of r^2 values for all allele pairings for one pair of loci.
+Values employing allele frequency weighting (AFW):
+
+k(1)	k(2)	allele freq 1	allele freq 2	weight		r^2_{comp}	r^2_{delta}
+------------------------------------------------------------------------------------------
+ 1	 1	0.604167	0.132653	0.080145	0.024647	0.030718	
+ 1	 2	0.604167	0.010204	0.006165	0.001950	0.002524	
+ 1	 3	0.604167	0.581633	0.351403	0.008420	0.006833	
+ 1	 4	0.604167	0.173469	0.104804	0.005626	0.005257	
+ 1	 5	0.604167	0.102041	0.061650	0.018191	0.020929	
+ 2	 1	0.395833	0.132653	0.052509	0.024647	0.030718	
+ 2	 2	0.395833	0.010204	0.004039	0.001950	0.002524	
+ 2	 3	0.395833	0.581633	0.230230	0.008420	0.006833	
+ 2	 4	0.395833	0.173469	0.068665	0.005626	0.005257	
+ 2	 5	0.395833	0.102041	0.040391	0.018191	0.020929	
+------------------------------------------------------------------------------------------
+sum weighted r^2_{comp}  = 0.011019
+sum weighted r^2_{delta} = 0.011123
+==========================================================================================
+
+
+==========================================================================================
+Table of r^2 values for all allele pairings for one pair of loci.
+Values for allele frequency threshold (AFT) of: 0.050000
+
+k(1)	k(2)	allele freq 1	allele freq 2	threshold	r^2_{comp}	r^2_{delta}
+------------------------------------------------------------------------------------------
+ 1	 1	0.604167	0.132653	Above		0.024647	0.030718	
+ 1	 2	0.604167	0.010204	Below		0.001950	0.002524	
+ 1	 3	0.604167	0.581633	Above		0.008420	0.006833	
+ 1	 4	0.604167	0.173469	Above		0.005626	0.005257	
+ 1	 5	0.604167	0.102041	Above		0.018191	0.020929	
+ 2	 1	0.395833	0.132653	Above		0.024647	0.030718	
+ 2	 2	0.395833	0.010204	Below		0.001950	0.002524	
+ 2	 3	0.395833	0.581633	Above		0.008420	0.006833	
+ 2	 4	0.395833	0.173469	Above		0.005626	0.005257	
+ 2	 5	0.395833	0.102041	Above		0.018191	0.020929	
+------------------------------------------------------------------------------------------
+sum thresholded r^2_{comp}  = 0.014221
+sum thresholded r^2_{delta} = 0.015934
+==========================================================================================
+
+
+********** Locus 1 - Locus 3 pair **********
+==========================================================================================
+Table of r^2 values for all allele pairings for one pair of loci.
+Values employing allele frequency weighting (AFW):
+
+k(1)	k(2)	allele freq 1	allele freq 2	weight		r^2_{comp}	r^2_{delta}
+------------------------------------------------------------------------------------------
+ 1	 1	0.604167	0.076087	0.045969	0.001285	0.001558	
+ 1	 2	0.604167	0.532609	0.321784	0.040446	0.028199	
+ 1	 3	0.604167	0.217391	0.131341	0.017056	0.015095	
+ 1	 4	0.604167	0.043478	0.026268	0.010730	0.012502	
+ 1	 5	0.604167	0.130435	0.078804	0.010712	0.014015	
+ 2	 1	0.395833	0.076087	0.030118	0.001285	0.001708	
+ 2	 2	0.395833	0.532609	0.210824	0.040446	0.030922	
+ 2	 3	0.395833	0.217391	0.086051	0.017056	0.016553	
+ 2	 4	0.395833	0.043478	0.017210	0.010730	0.013709	
+ 2	 5	0.395833	0.130435	0.051630	0.010712	0.015368	
+------------------------------------------------------------------------------------------
+sum weighted r^2_{comp}  = 0.027211
+sum weighted r^2_{delta} = 0.021585
+==========================================================================================
+
+
+==========================================================================================
+Table of r^2 values for all allele pairings for one pair of loci.
+Values for allele frequency threshold (AFT) of: 0.050000
+
+k(1)	k(2)	allele freq 1	allele freq 2	threshold	r^2_{comp}	r^2_{delta}
+------------------------------------------------------------------------------------------
+ 1	 1	0.604167	0.076087	Above		0.001285	0.001558	
+ 1	 2	0.604167	0.532609	Above		0.040446	0.028199	
+ 1	 3	0.604167	0.217391	Above		0.017056	0.015095	
+ 1	 4	0.604167	0.043478	Below		0.010730	0.012502	
+ 1	 5	0.604167	0.130435	Above		0.010712	0.014015	
+ 2	 1	0.395833	0.076087	Above		0.001285	0.001708	
+ 2	 2	0.395833	0.532609	Above		0.040446	0.030922	
+ 2	 3	0.395833	0.217391	Above		0.017056	0.016553	
+ 2	 4	0.395833	0.043478	Below		0.010730	0.013709	
+ 2	 5	0.395833	0.130435	Above		0.010712	0.015368	
+------------------------------------------------------------------------------------------
+sum thresholded r^2_{comp}  = 0.017375
+sum thresholded r^2_{delta} = 0.015427
+==========================================================================================
+
+
+********** Locus 2 - Locus 3 pair **********
+==========================================================================================
+Table of r^2 values for all allele pairings for one pair of loci.
+Values employing allele frequency weighting (AFW):
+
+k(1)	k(2)	allele freq 1	allele freq 2	weight		r^2_{comp}	r^2_{delta}
+------------------------------------------------------------------------------------------
+ 1	 1	0.132653	0.076087	0.010093	0.011465	0.012011	
+ 1	 2	0.132653	0.532609	0.070652	0.244619	0.151079	
+ 1	 3	0.132653	0.217391	0.028838	0.370707	0.286320	
+ 1	 4	0.132653	0.043478	0.005768	0.022476	0.022636	
+ 1	 5	0.132653	0.130435	0.017303	0.000378	0.000428	
+ 2	 1	0.010204	0.076087	0.000776	0.000000	0.000000	
+ 2	 2	0.010204	0.532609	0.005435	0.000000	0.000000	
+ 2	 3	0.010204	0.217391	0.002218	0.000000	0.000000	
+ 2	 4	0.010204	0.043478	0.000444	0.000000	0.000000	
+ 2	 5	0.010204	0.130435	0.001331	0.000000	0.000000	
+ 3	 1	0.581633	0.076087	0.044255	0.085626	0.054561	
+ 3	 2	0.581633	0.532609	0.309783	0.321286	0.120692	
+ 3	 3	0.581633	0.217391	0.126442	0.390581	0.183487	
+ 3	 4	0.581633	0.043478	0.025288	0.009639	0.005905	
+ 3	 5	0.581633	0.130435	0.075865	0.060139	0.041371	
+ 4	 1	0.173469	0.076087	0.013199	0.058092	0.044895	
+ 4	 2	0.173469	0.532609	0.092391	0.200959	0.091557	
+ 4	 3	0.173469	0.217391	0.037711	0.115531	0.065825	
+ 4	 4	0.173469	0.043478	0.007542	0.001237	0.000919	
+ 4	 5	0.173469	0.130435	0.022626	0.210576	0.175689	
+ 5	 1	0.102041	0.076087	0.007764	0.003067	0.002960	
+ 5	 2	0.102041	0.532609	0.054348	0.036588	0.020822	
+ 5	 3	0.102041	0.217391	0.022183	0.007919	0.005636	
+ 5	 4	0.102041	0.043478	0.004437	0.001296	0.001203	
+ 5	 5	0.102041	0.130435	0.013310	0.023283	0.024265	
+------------------------------------------------------------------------------------------
+sum weighted r^2_{comp}  = 0.216703
+sum weighted r^2_{delta} = 0.102605
+==========================================================================================
+
+
+==========================================================================================
+Table of r^2 values for all allele pairings for one pair of loci.
+Values for allele frequency threshold (AFT) of: 0.050000
+
+k(1)	k(2)	allele freq 1	allele freq 2	threshold	r^2_{comp}	r^2_{delta}
+------------------------------------------------------------------------------------------
+ 1	 1	0.132653	0.076087	Above		0.011465	0.012011	
+ 1	 2	0.132653	0.532609	Above		0.244619	0.151079	
+ 1	 3	0.132653	0.217391	Above		0.370707	0.286320	
+ 1	 4	0.132653	0.043478	Below		0.022476	0.022636	
+ 1	 5	0.132653	0.130435	Above		0.000378	0.000428	
+ 2	 1	0.010204	0.076087	Below		0.000000	0.000000	
+ 2	 2	0.010204	0.532609	Below		0.000000	0.000000	
+ 2	 3	0.010204	0.217391	Below		0.000000	0.000000	
+ 2	 4	0.010204	0.043478	Below		0.000000	0.000000	
+ 2	 5	0.010204	0.130435	Below		0.000000	0.000000	
+ 3	 1	0.581633	0.076087	Above		0.085626	0.054561	
+ 3	 2	0.581633	0.532609	Above		0.321286	0.120692	
+ 3	 3	0.581633	0.217391	Above		0.390581	0.183487	
+ 3	 4	0.581633	0.043478	Below		0.009639	0.005905	
+ 3	 5	0.581633	0.130435	Above		0.060139	0.041371	
+ 4	 1	0.173469	0.076087	Above		0.058092	0.044895	
+ 4	 2	0.173469	0.532609	Above		0.200959	0.091557	
+ 4	 3	0.173469	0.217391	Above		0.115531	0.065825	
+ 4	 4	0.173469	0.043478	Below		0.001237	0.000919	
+ 4	 5	0.173469	0.130435	Above		0.210576	0.175689	
+ 5	 1	0.102041	0.076087	Above		0.003067	0.002960	
+ 5	 2	0.102041	0.532609	Above		0.036588	0.020822	
+ 5	 3	0.102041	0.217391	Above		0.007919	0.005636	
+ 5	 4	0.102041	0.043478	Below		0.001296	0.001203	
+ 5	 5	0.102041	0.130435	Above		0.023283	0.024265	
+------------------------------------------------------------------------------------------
+sum thresholded r^2_{comp}  = 0.133801
+sum thresholded r^2_{delta} = 0.080100
+==========================================================================================
+
+
+
+======================================================================================================================
+r_squared values for each locus pair with multilocus weights based on numbers of individuals and numbers 
+of alleles (eqn. 6 in Sved et al. 2013). For each locus pair estimates are either allele frequency weighted (AFW)
+or allele frequency thresholded (AFT).
+
+Locus pair	S	k(1)	k(2)	multilocus	AFW, ML weighted		AFT, ML weighted
+					weighting	r^2_{comp}	r^2_{delta}	r^2_{comp}	r^2_{delta}
+----------------------------------------------------------------------------------------------------------------------
+  1,2	       48.00	  2	  5	0.164100	0.001808	0.001825	0.002334	0.002615	
+  1,3	       44.00	  2	  5	0.164100	0.004465	0.003542	0.002851	0.002532	
+  2,3	       45.00	  5	  5	0.656402	0.142244	0.067350	0.087827	0.052578	
+----------------------------------------------------------------------------------------------------------------------
+Estimates over all locus pairs:
+
+	Allele frequency weighted (AFW) within locus pairs:
+		r^2_{comp} = 0.148571
+		r^2_{delta} = 0.072814
+
+	Allele frequency thresholded (AFT) within locus pairs:
+		r^2_{comp} = 0.093208
+		r^2_{delta} = 0.057973
+======================================================================================================================
+
+
+========================================================================================
+Table of sample sizes of diploid individuals (S) and
+E(r^2) for a finite sample of diploid individuals.
+
+Estimator		S	Arithmetic mean S	Harmonic mean S
+----------------------------------------------------------------------------------------
+r^2_{comp}
+	Sample size	   50.00	   45.67	   45.60
+	r^2 correction	0.019998	0.0218951	0.0219249
+
+r^2_{delta}
+	Sample size	   50.00	   45.67	   45.60
+	r^2 correction	0.019998	0.0218951	0.0219249
+========================================================================================
+
+
+=================================================================================================
+Overall r_squared values with multilocus weights based on numbers of individuals and numbers 
+of alleles (eqn. 6 in Sved et al. 2013). For each locus pair estimates are either allele
+frequency weighted (AFW) or allele frequency thresholded (AFT).
+Unbiased estimates are multiplied by S/(S-1) where S is the harmonic mean sample size as in
+Weir (1979).
+-------------------------------------------------------------------------------------------------
+Estimates over all locus pairs:
+
+	Allele frequency weighted (AFW) within locus pairs:
+		r^2_{comp} = 0.148571
+		r^2_{delta} = 0.072814
+
+		unbaised r^2_{comp} = 0.151902
+		unbaised r^2_{delta} = 0.074446
+
+	Allele frequency thresholded (AFT) within locus pairs:
+		r^2_{comp} = 0.093208
+		r^2_{delta} = 0.057973
+
+		unbaised r^2_{comp} = 0.095298
+		unbaised r^2_{delta} = 0.059273
+=================================================================================================
+
+=================================================================================================
+Estimates of Ne based on 1/(3 x r^2 - (r^2 correction factor)) with and without S/(S-1)
+bias correction to r^2. The r^2 correction factor is based on harmonic mean sample size of individuals, S.
+-------------------------------------------------------------------------------------------------
+Ne =  2.63 based on r^2_{c} AFW
+Ne =  4.68 based on r^2_{c} AFT
+Ne =  2.56 based on r^2_{c} AFW unbiased
+Ne =  4.54 based on r^2_{c} AFT unbiased
+
+Ne =  6.55 based on r^2_{delta} AFW
+Ne =  9.25 based on r^2_{delta} AFT
+Ne =  6.35 based on r^2_{delta} AFW unbiased
+Ne =  8.93 based on r^2_{delta} AFT unbiased
+=================================================================================================
+
+=================================================================================================
+Ne estimate based on statistical fit correction of Waples (2006) as implemented
+in LDNe and NeEstimator [see Waples & Do (2007) Table 1].
+Allele frequency thresholded (AFT) and allele frequency weighted (AFW) and well as 
+estimates with and without S/(S-1) bias correction given for comparison. 
+All estimates use harmonic mean sample size of individuals (S),
+A value of NaN indicates a denominator of zero.
+-------------------------------------------------------------------------------------------------
+Estimate based on statistical fit for sample size >= 30:
+AFW Ne =     6.85
+AFT Ne =     9.73
+UB AFW Ne =     6.64
+UB AFT Ne =     9.38
+=================================================================================================
+
+Permuting genotype data 2500 times ...
+
+==============================================================================
+Mean and median r^2 from genotype data permuted among loci. This value is used as
+the correction factor in Ne = 1/(3*(r^2 - r^2 correction factor)).
+Estimates are for both allele frequency weighted (AFW) and allele
+frequency thresholded (AFT) estimators.
+------------------------------------------------------------------------------
+Permuted genotypes 2500 times
+
+---------------------
+permuted r^2_{comp} AFW:
+	mean = 0.0355581
+	median = 0.0288633
+
+	Ne (mean permuted r^2 as correction factor) =  2.94952
+	Ne (median permuted r^2 as correction factor) =  2.78457
+	Ne 95% confidence intervals:	 2.39811 -  7.84447
+---------------------
+permuted r^2_{comp} AFT:
+	mean = 0.0286371
+	median = 0.0265377
+
+	Ne (mean permuted r^2 as correction factor) =  5.16225
+	Ne (median permuted r^2 as correction factor) =   4.9997
+	Ne 95% confidence intervals:	 4.04188 -  9.76422
+---------------------
+permuted r^2_{delta} AFW:
+	mean = 0.0209673
+	median = 0.0184113
+
+	Ne (mean permuted r^2 as correction factor) =  6.42926
+	Ne (median permuted r^2 as correction factor) =  6.12719
+	Ne 95% confidence intervals:	 5.05599 -  15.3389
+---------------------
+permuted r^2_{delta} AFT:
+	mean = 0.021455
+	median = 0.0203752
+
+	Ne (mean permuted r^2 as correction factor) =  9.12786
+	Ne (median permuted r^2 as correction factor) =  8.86571
+	Ne 95% confidence intervals:	 6.80164 -  18.6702
+==============================================================================
+
+==========================================================================
+Parametric confidence intervals for r^2 estimates based on the
+chi-square distribution and number of pairs of loci in data set.
+
+		estimate	lower bound	upper bound	locus pairs
+--------------------------------------------------------------------------
+r^2_{comp} AFW	0.148571	0.047678	2.065440	       3
+
+r^2_{comp} AFT	0.0932084	0.029912	1.295789	       3
+
+r^2_{delta} AFW	0.0728136	0.023367	1.012259	       3
+
+r^2_{delta} AFT	0.0579732	0.018604	0.805948	       3
+==========================================================================
+
+
+====================================================================================
+Confidence intervals from a delete-one jackknife over r^2 estimates over all 
+unique pairs of loci.
+Ne = 1/(3*(r^2 - r^2 correction factor)).
+The r^2 correction factor is median r^2 permute for r^2_{c} and harmonic mean S 
+for r^2_{delta}. Estimates are either allele frequency weighted (AFW) or allele 
+frequency thresholded (AFT).
+
+		estimate	lower bound	upper bound	locus pairs
+------------------------------------------------------------------------------------
+r^2_{comp} AFW:
+  percentile CI: 0.148571	0.018412	0.171154	       3
+  Ne CI:	 2.78457	 2.34263	infinity
+
+  normal CI:	0.148571	0.003114	0.294028	       3
+  Ne CI:	 2.78457	 1.25708	infinity
+
+r^2_{comp} AFT:
+  percentile CI: 0.0932084	0.015661	0.107320	       3
+  Ne CI:	  4.9997	 4.12634	infinity
+
+  normal CI:	0.0932084	0.006604	0.179813	       3
+  Ne CI:	  4.9997	 2.17474	infinity
+
+r^2_{delta} AFW:
+  percentile CI: 0.0728136	0.015900	0.082346	       3
+  Ne CI:	 2.63201	 2.34263	infinity
+
+  normal CI:	0.0728136	0.009175	0.136453	       3
+  Ne CI:	 2.63201	 1.25708	infinity
+
+r^2_{delta} AFT:
+  percentile CI: 0.0579732	0.015703	0.065890	       3
+  Ne CI:	 9.24685	 7.58173	infinity
+
+  normal CI:	0.0579732	0.010782	0.105165	       3
+  Ne CI:	 9.24685	  4.0045	infinity
+
+------------------------------------------------------------------------------------
+Confidence intervals are 2.5% to 97.5%
+====================================================================================
+
+==========================================================================
+Chi-square confidence intervals. 
+Estimate of effective number of independent comparisons (n') based on
+delete-one-locus-pair jackknike estimate of variance of r^2 (following Waples and Do 2007
+p. 754-755). Estimates are either allele frequency weighted (AFW) or allele
+frequency thresholded (AFT). Ne = 1/(3*(r^2 - r^2 correction factor)).
+The r^2 correction factor is median r^2 permute for r^2_{c} and harmonic mean S for r^2_{delta}.
+Compare n' to number of loci, and number of locus pairs.
+A value of n' > number of locus pairs suggests violation of assumptions
+and that confidence intervals based on n' are too small.
+
+		estimate	lower CI	 upper CI
+--------------------------------------------------------------------------
+r^2_{comp} AFW:
+	n' =  4.00769
+	r^2 = 	0.148571	0.053370	  1.2231
+	Ne = 	 2.78457	0.279117	 13.6019
+
+	locus pairs = 3
+	r^2 = 	0.148571	0.047678	 2.06544
+	Ne = 	 2.78457	0.163673	 17.7167
+
+	number of loci = 3
+	r^2 = 	0.148571	0.047678	 2.06544
+	Ne = 	 2.78457	0.163673	 17.7167
+
+r^2_{comp} AFT:
+	n' =  4.44962
+	r^2 = 	0.093208	0.034813	0.656279
+	Ne = 	  4.9997	0.529318	 40.2803
+
+	locus pairs = 3
+	r^2 = 	0.093208	0.029912	 1.29579
+	Ne = 	  4.9997	0.262622	    98.8
+
+	number of loci = 3
+	r^2 = 	0.093208	0.029912	 1.29579
+	Ne = 	  4.9997	0.262622	    98.8
+
+r^2_{delta} AFW:
+	n' =  5.02893
+	r^2 = 	0.148571	0.028429	0.434783
+	Ne = 	 6.55024	0.807381	 51.2475
+
+	locus pairs = 3
+	r^2 = 	0.072814	0.023367	 1.01226
+	Ne = 	 6.55024	0.336587	 231.204
+
+	number of loci = 3
+	r^2 = 	0.072814	0.023367	 1.01226
+	Ne = 	 6.55024	0.336587	 231.204
+
+r^2_{delta} AFT:
+	n' =  5.79729
+	r^2 = 	0.057973	0.023791	0.292017
+	Ne = 	 9.24685	 1.23415	 178.587
+
+	locus pairs = 3
+	r^2 = 	0.057973	0.018604	0.805948
+	Ne = 	 9.24685	0.425158	infinity
+
+	number of loci = 3
+	r^2 = 	0.057973	0.018604	0.805948
+	Ne = 	 9.24685	0.425158	infinity
+
+==========================================================================
+
+========================================================================================
+Results of delete-one jackknifing over loci.
+Ne = 1/(3*(r^2 - r^2 correction factor)).
+r^2 correction factor is median r^2 permute for r^2_{c} and harmonic mean S for r^2_{delta}.
+Estimates are either allele frequency weighted (AFW) or allele frequency thresholded (AFT).
+Estimates are with and without Weir's (1979) S/(S-1) weighting of r^2 for bias correction.
+For unbiased estimates, r^2_{c} correction factor is (median r^2 permute)*harmonic mean S
+and is unchanged for r^2_{delta}.
+----------------------------------------------------------------------------------------
+Estimates without Weir's (1979) S/(S-1) weighting of r^2 for bias correction.
+
+r^2_{comp} AFW:
+	point estimate & percentile confidence interval: 0.148571 (0.126471 to 0.131574)
+	Ne estimate: 2.784566  (3.245349 to 3.415025)
+
+	point estimate & normal distribution confidence interval: 0.148571 (0.050498 to 0.246644)
+	Ne estimate: 2.784566  (1.530595 to 15.407376)
+
+r^2_{comp} AFT:
+	point estimate & percentile confidence interval: 0.093208 (0.082199 to 0.083900)
+	Ne estimate: 4.999702  (5.811061 to 5.988602)
+
+	point estimate & normal distribution confidence interval: 0.093208 (0.044441 to 0.141976)
+	Ne estimate: 4.999702  (2.887548 to 18.618760)
+
+r^2_{delta} AFW:
+	point estimate & percentile confidence interval: 0.072814 (0.063004 to 0.064036)
+	Ne estimate: 6.550245  (7.915539 to 8.114477)
+
+	point estimate & normal distribution confidence interval: 0.072814 (0.029598 to 0.116029)
+	Ne estimate: 6.550245  (3.542159 to 43.443546)
+
+r^2_{delta} AFT:
+	point estimate & percentile confidence interval: 0.057973 (0.052195 to 0.052268)
+	Ne estimate: 9.246848  (10.985558 to 11.011864)
+
+	point estimate & normal distribution confidence interval: 0.057973 (0.030560 to 0.085387)
+	Ne estimate: 9.246848  (5.252518 to 38.602514)
+
+-------------------
+Estimates with Weir's (1979) S/(S-1) weighting of r^2 for bias correction.
+
+r^2_{comp} AFW:
+	point estimate & percentile confidence interval: 0.151902 (0.129307 to 0.134524)
+	Ne estimate: 2.723507  (3.174186 to 3.340142)
+
+	point estimate & normal distribution confidence interval: 0.151902 (0.051630 to 0.252173)
+	Ne estimate: 2.723507  (1.497032 to 15.069529)
+
+r^2_{comp} AFT:
+	point estimate & percentile distribution confidence interval: 0.095298 (0.084042 to 0.085781)
+	Ne estimate: 4.890071  (5.683638 to 5.857286)
+
+	point estimate & normal distribution confidence interval: 0.095298 (0.045437 to 0.145159)
+	Ne estimate: 4.890071  (2.824231 to 18.210495)
+
+r^2_{delta} AFW:
+	point estimate & percentile confidence interval: 0.074446 (0.064416 to 0.065472)
+	Ne estimate: 6.346655  (7.654582 to 7.844737)
+
+	point estimate & normal distribution confidence interval: 0.074446 (0.030261 to 0.118631)
+	Ne estimate: 6.346655  (3.446878 to 39.985525)
+
+r^2_{delta} AFT:
+	point estimate & percentile confidence interval: 0.059273 (0.053365 to 0.053440)
+	Ne estimate: 8.925057  (10.577085 to 10.602016)
+
+	point estimate & normal distribution confidence interval: 0.059273 (0.031245 to 0.087301)
+	Ne estimate: 8.925057  (5.098717 to 35.764820)
+-------------------
+Confidence intervals are 2.5% to 97.5%
+========================================================================================
+
+========================================================================================
+Results of delete-one jackknifing over loci.
+Ne = 1/(3*(r^2 - r^2 correction factor)).
+r^2 correction factor is median r^2 permute for r^2_{c} and harmonic mean S for r^2_{delta}.
+Estimates are either allele frequency weighted (AFW) or allele frequency thresholded (AFT).
+Estimates are with and without Weir's (1979) S/(S-1) weighting of r^2 for bias correction.
+For unbiased estimates, r^2_{c} correction factor is (median r^2 permute)*harmonic mean S
+and is unchanged for r^2_{delta}.
+----------------------------------------------------------------------------------------
+Estimates without Weir's (1979) S/(S-1) weighting of r^2 for bias correction.
+
+r^2_{comp} AFW:
+	point estimate & percentile confidence interval: 0.148571 (0.011019 to 0.027211)
+	Ne estimate: 2.784566 (0 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.148571 (-0.034447 to 0.331589)
+	Ne estimate: 2.784566 (0 to  infinity)
+
+r^2_{comp} AFT:
+	point estimate & percentile confidence interval: 0.093208 (0.014221 to 0.017375)
+	Ne estimate: 4.999702 (0 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.093208 (-0.015848 to 0.202265)
+	Ne estimate: 4.999702  (1.896878 to  infinity)
+
+r^2_{delta} AFW:
+	point estimate & percentile confidence interval: 0.072814 (0.011123 to 0.021585)
+	Ne estimate: 6.550245 (0 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.072814 (-0.007316 to 0.152943)
+	Ne estimate: 6.550245  (2.544180 to  infinity)
+
+r^2_{delta} AFT:
+	point estimate & percentile confidence interval: 0.057973 (0.015427 to 0.015934)
+	Ne estimate: 9.246848 (0 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.057973 (-0.001547 to 0.117494)
+	Ne estimate: 9.246848  (3.487887 to  infinity)
+
+-------------------
+Estimates with Weir's (1979) S/(S-1) weighting of r^2 for bias correction.
+
+r^2_{comp} AFW:
+	point estimate & percentile confidence interval: 0.151902 (0.011266 to 0.027821)
+	Ne estimate: 2.723507 (0 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.151902 (-0.035219 to 0.339023)
+	Ne estimate: 2.723507  (1.076963 to  infinity)
+
+r^2_{comp} AFT:
+	point estimate & percentile distribution confidence interval: 0.095298 (0.014540 to 0.017764)
+	Ne estimate: 4.890071 (0 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.095298 (-0.016204 to 0.206800)
+	Ne estimate: 4.890071  (1.855284 to  infinity)
+
+r^2_{delta} AFW:
+	point estimate & percentile confidence interval: 0.074446 (0.011372 to 0.022069)
+	Ne estimate: 6.346655  (2306.903158 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.074446 (-0.007480 to 0.156372)
+	Ne estimate: 6.346655  (2.479294 to  infinity)
+
+r^2_{delta} AFT:
+	point estimate & percentile confidence interval: 0.059273 (0.015773 to 0.016292)
+	Ne estimate: 8.925057 (0 to  infinity)
+
+	point estimate & normal distribution confidence interval: 0.059273 (-0.001582 to 0.120128)
+	Ne estimate: 8.925057  (3.394330 to  infinity)
+-------------------
+Confidence intervals are 2.5% to 97.5%
+========================================================================================
+
+Program completed.
+>> 
