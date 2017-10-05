@@ -22,7 +22,7 @@ function [r_squared_c_W,r_squared_c_TH,r_squared_delta_W,r_squared_delta_TH,r_sq
 % Estimate r^2_{c} and r^2_{delta} and also tally sample sizes while accounting for missing data and possible cases of div
 % zero. 
 %
-% version 1.0 27 Sept 2016
+% version 1.1 04 October 2017
 
 %
 %   Inputs:
@@ -102,7 +102,7 @@ function [r_squared_c_W,r_squared_c_TH,r_squared_delta_W,r_squared_delta_TH,r_sq
             
             if num_alleles(1,i) <= 1    %locus is monomorphic
                 if print_notes
-                    fprintf('NOTE: locus %d has only one allele and was skipped!\n', i);
+                    fprintf('NOTE: locus %d has only one allele or only missing data and was skipped!\n', i);
                 end
 
                 r_squared_table(table_row,1) = i;
@@ -116,7 +116,7 @@ function [r_squared_c_W,r_squared_c_TH,r_squared_delta_W,r_squared_delta_TH,r_sq
 
             if num_alleles(1,j) <= 1    %locus is monomorphic
                 if print_notes
-                    fprintf('NOTE: locus %d has only one allele and was skipped!\n', j);
+                    fprintf('NOTE: locus %d has only one allele or only missing data and was skipped!\n', j);
                 end
                 
                 r_squared_table(table_row,1) = i;

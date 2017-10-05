@@ -1,4 +1,4 @@
-function [num_alleles, allele_freqs, allele_states] = alleles(genotypes,num_individuals,num_loci);
+function [num_alleles, allele_freqs, allele_states] = alleles(genotypes,num_individuals,num_loci)
 % Function determine numbers of alleles per locus, allele frequencies at each locus,
 % and allelic states.
 %
@@ -15,6 +15,28 @@ function [num_alleles, allele_freqs, allele_states] = alleles(genotypes,num_indi
 %                  (entries without an allele are filled with zeros)
 %   allele_states - max num_alleles by num_loci vector of integer allelic
 %                   states (entries without an allele are filled with zeros)
+%
+%**************
+%   Copyright 2017 by Matthew B Hamilton. 
+%
+%   This file is part of SpEED-Ne: Simulation & Estimation of gamEtic Disequilibrium Ne.
+% 
+%   SpEED-Ne is free software: you can redistribute it and/or modify
+%   it under the terms of the GNU General Public License as published by
+%   the Free Software Foundation, either version 3 of the License, or
+%   (at your option) any later version.
+% 
+%   SpEED-Ne is distributed in the hope that it will be useful,
+%   but WITHOUT ANY WARRANTY; without even the implied warranty of
+%   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%   GNU General Public License for more details.
+% 
+%   A copy of the GNU General Public License is available at http://www.gnu.org/licenses/.
+%**************
+%
+% version 1.1 04 October 2017
+
+
 
     % organize data into alleles 
     alleles = zeros(2*num_individuals,num_loci); %allocate space for column vectors of all alleles at each locus
@@ -35,8 +57,15 @@ function [num_alleles, allele_freqs, allele_states] = alleles(genotypes,num_indi
     % determine alleles present at each locus, get number of alleles per locus
     for i=1:num_loci
         table = tabulate(alleles(:,i)); % get allele states (col 1), counts (col 2), and freqs (row 3) of alleles
-        indices = table(:,2) > 0;   % get indices of rows that have a count > zero
-        num_alleles(1,i) = sum(indices); %count up indices that are one to get number of alleles
+        
+        % test to determine if table is empty which occurs when a locus has only missing data
+        if isempty(table)
+            num_alleles(1,i) = 0;
+        else
+            indices = table(:,2) > 0;   % get indices of rows that have a count > zero
+            num_alleles(1,i) = sum(indices); %count up indices that are one to get number of alleles
+        end
+        
     end
 
     max_alleles = max(num_alleles); %determine the maximum number of alleles

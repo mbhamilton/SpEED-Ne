@@ -3,7 +3,7 @@ function varargout = r_squared_v2(varargin)
 %   effective population size (Ne) using a multilocus diploid genotype dataset. 
 %   The Statistics Toolbox of Matlab is required.
 %  
-%   version 2.3 -  16 August 2017
+%   version 2.3 - 16 August 2017
 %
 %**************
 %   Copyright 2017 by Matthew B Hamilton. 
