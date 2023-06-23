@@ -1,0 +1,1 @@
+Version 2.5 of SpEED_Ne fixes a bug where the incorrect value of number of individuals was used to determine delete individual jackknife confidence intervals. Users should use version 2.5 to re-estimate any prior estimates of delete-one-individual confidence intervals. 
